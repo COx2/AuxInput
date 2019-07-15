@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="b1KBLS" name="AuxInput" projectType="audioplug" jucerVersion="5.4.3">
+  <MAINGROUP id="Yx2hYE" name="AuxInput">
+    <GROUP id="{88C5E4DC-89FC-5F2A-5350-81F8B4376754}" name="Source">
+      <FILE id="I7GUBF" name="ScopeComponent.cpp" compile="1" resource="0"
+            file="Source/ScopeComponent.cpp"/>
+      <FILE id="ynRSyD" name="ScopeComponent.h" compile="0" resource="0"
+            file="Source/ScopeComponent.h"/>
+      <FILE id="DoiQvL" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="NJExe5" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="rQqKgV" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="Rur0Xq" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="C:\SDKs\Steinberg\ASIO_SDK\common"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="C:\SDKs\Steinberg\ASIO_SDK\common"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../SDKs/ROLI/JUCE_latest/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_opengl"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_cryptography"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_plugin_client"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"
+               JUCE_ASIO="1" JUCE_WASAPI_EXCLUSIVE="1" JUCE_WASAPI="1" JUCE_DIRECTSOUND="1"/>
+</JUCERPROJECT>
