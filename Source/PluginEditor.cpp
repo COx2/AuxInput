@@ -15,11 +15,6 @@
 AuxInputAudioProcessorEditor::AuxInputAudioProcessorEditor (AuxInputAudioProcessor& p)
     : AudioProcessorEditor (&p), processor (p)
 {
-#if JUCE_WINDOWS
-	String typeFaceName = "Meiryo UI";
-	getLookAndFeel().setDefaultSansSerifTypefaceName(typeFaceName);
-#endif
-
 	selectorComponet.reset(new AudioDeviceSelectorComponent(processor.getDeviceManager(), 0, 2, 0, 0, false, false, false, false));
 	addAndMakeVisible(selectorComponet.get());
 
